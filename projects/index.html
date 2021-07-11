@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="/favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			min-height: 100%;
+		}
+	</style>
+	
+
+		
+
+		<link rel="modulepreload" href="/./app/start-fe44efce.js">
+		<link rel="modulepreload" href="/./app/chunks/vendor-6871f364.js">
+		<link rel="modulepreload" href="/./app/pages/__layout.svelte-2d3d8cca.js">
+		<link rel="modulepreload" href="/./app/pages/projects.svelte-48601cba.js">
+		<link rel="stylesheet" href="/./app/assets/start-a8cd1609.css">
+		<link rel="stylesheet" href="/./app/assets/vendor-4d25fe4c.css">
+		<link rel="stylesheet" href="/./app/assets/pages/__layout.svelte-fc799984.css">
+
+		<script type="module">
+			import { start } from "/./app/start-fe44efce.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./app/pages/__layout.svelte-2d3d8cca.js"),
+						import("/./app/pages/projects.svelte-48601cba.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/projects",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+</head>
+
+<body>
+	<div id="svelte">
+
+
+<div class="page-wrapper with-navbar"><nav class="navbar svelte-1yw7say"><a href="/" class="navbar-brand">Anton Aksionau </a>
+    <ul class="navbar-nav d-none d-md-flex">
+      <li class="nav-item active"><a href="/blog" class="nav-link">Blog</a></li>
+      <li class="nav-item"><a href="/projects" class="nav-link">Projects</a></li></ul></nav>
+  
+
+  <main class="content-wrapper"><section class="content">Projects
+</section></main>
+</div>
+
+
+
+	
+</div>
+</body>
+
+</html>
