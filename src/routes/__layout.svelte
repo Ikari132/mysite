@@ -2,24 +2,34 @@
 </script>
 
 <script lang="ts">
-  // import "halfmoon/css/halfmoon-variables.min.css";
+  import { page } from "$app/stores";
+
+  $: console.log($page);
+  $: paths = [
+    {
+      label: "Blog",
+      href: "/blog",
+    },
+    {
+      label: "Projects",
+      href: "/projects",
+    },
+  ];
 </script>
 
 <div class="page-wrapper with-navbar">
+  <!-- justify-content-between -->
   <nav class="navbar">
     <a href="/" class="navbar-brand"> Anton Aksionau </a>
     <ul class="navbar-nav d-none d-md-flex">
+      {#each paths as path (path.href)}
+        <li class="nav-item" class:active={$page.path.includes(path.href)}>
+          <a href={path.href} class="nav-link">{path.label}</a>
+        </li>
+      {/each}
       <!-- d-none = display: none, d-md-flex = display: flex on medium screens and up (width > 768px) -->
-      <li class="nav-item active">
-        <a href="/blog" class="nav-link">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a href="/projects" class="nav-link">Projects</a>
-      </li>
     </ul>
   </nav>
-  <!-- <header class="page-header"></header> -->
-
   <main class="content-wrapper">
     <slot />
   </main>
@@ -33,8 +43,8 @@
     font-family: "Lato", sans-serif;
   }
   .navbar {
-    background: #000;
-    color: #fff;
+    /* background: #000; */
+    /* color: #fff; */
   }
   /* .page-header {
     min-height: 56px;
