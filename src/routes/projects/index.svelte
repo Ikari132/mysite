@@ -1,58 +1,64 @@
-<section class="content">
-  <h2 class="title">My projects</h2>
+<section class="container">
+  <h2 class="title mb-5">My projects</h2>
 
   <div class="row">
-    <a
-      class="card w-350 mw-full p-0 d-flex project-card"
-      href="/projects/counter"
-    >
-      <div class="w-100 h-100 m-10 align-self-center">
-        <div
-          class="w-100 h-100 rounded d-flex align-items-center justify-content-center"
-          style="background-color: #5352ed;"
-        />
-      </div>
-      <div
-        class="flex-grow-1 overflow-y-hidden d-flex align-items-center position-relative h-120"
-      >
-        <div class="p-10 w-full m-auto">
-          <p
-            class="font-size-18 text-dark-lm text-light-dm m-0 mb-5 text-truncate font-weight-medium"
-          >
-            Working time counter
-          </p>
-          <p class="font-size-14 mt-5 mb-0">
-            Browser extension that helps you to track time
-          </p>
+    <div class="col-6">
+      <a href="/projects/counter" class="card-link">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-4">
+              <img src="static/counter.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-8 card-content">
+              <div class="card-body">
+                <h5 class="card-title">Working time counter</h5>
+                <p class="card-text">
+                  Browser extension that helps you track time
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </a>
-
-    <a
-      class="card w-350 mw-full p-0 d-flex project-card"
-      href="/projects/counter"
-    >
-      <div class="w-100 h-100 m-10 align-self-center">
-        <div
-          class="w-100 h-100 rounded d-flex align-items-center justify-content-center"
-          style="background-color: #5352ed;"
-        />
-      </div>
-      <div
-        class="flex-grow-1 overflow-y-hidden d-flex align-items-center position-relative h-120"
-      >
-        <div class="p-10 w-full m-auto">
-          <p
-            class="font-size-18 text-dark-lm text-light-dm m-0 mb-5 text-truncate font-weight-medium"
-          >
-            Working time counter
-          </p>
-          <p class="font-size-14 mt-5 mb-0">
-            Browser extension that helps you to track time
-          </p>
+      </a>
+    </div>
+    <div class="col-6">
+      <a href="/projects/counter" class="card-link">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-4">
+              <img src="static/counter.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-8 card-content">
+              <div class="card-body">
+                <h5 class="card-title">Working time counter</h5>
+                <p class="card-text">
+                  Browser extension that helps you track time
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
+    <div class="col-6">
+      <a href="/projects/counter" class="card-link">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-4">
+              <img src="static/counter.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-8 card-content">
+              <div class="card-body">
+                <h5 class="card-title">Working time counter</h5>
+                <p class="card-text">
+                  Browser extension that helps you track time
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -61,15 +67,17 @@
     font-size: 2.4rem;
     font-weight: 700;
   }
-  .project-card {
-    --content-and-card-spacing: 0;
-
-    margin-left: 10px;
-  }
-  .project-card:first-child {
-    margin-left: 0;
-  }
-  .project-card:hover {
+  .card-link {
     text-decoration: none;
+    color: #212529;
+  }
+  .card {
+    box-shadow: 0px 0px 20px rgb(11 17 52 / 10%);
+    border: none;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .card img {
+    border-radius: 25px;
   }
 </style>
