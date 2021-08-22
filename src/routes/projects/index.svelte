@@ -7,7 +7,7 @@
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-4">
-              <img src="static/counter.jpg" class="img-fluid" alt="" />
+              <img src="counter.jpg" class="img-fluid" alt="" />
             </div>
             <div class="col-8 card-content">
               <div class="card-body">
@@ -21,7 +21,7 @@
         </div>
       </a>
     </div>
-    <div class="col-6">
+    <!-- <div class="col-6">
       <a href="/projects/counter" class="card-link">
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
@@ -39,8 +39,8 @@
           </div>
         </div>
       </a>
-    </div>
-    <div class="col-6">
+    </div> -->
+    <!-- <div class="col-6">
       <a href="/projects/counter" class="card-link">
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
@@ -58,7 +58,7 @@
           </div>
         </div>
       </a>
-    </div>
+    </div> -->
   </div>
 </section>
 

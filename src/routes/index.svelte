@@ -38,7 +38,7 @@
           <div class="row g-0">
             <div class="col-4">
               <img
-                src="static/projects-bg.jpg"
+                src="projects-bg.jpg"
                 class="img-fluid"
                 alt="Projects background"
               />
@@ -58,7 +58,7 @@
           <div class="row g-0">
             <div class="col-4">
               <img
-                src="static/blog-bg.jpg"
+                src="blog-bg.jpg"
                 class="img-fluid"
                 alt="Blog background"
               />
@@ -92,7 +92,7 @@
     box-shadow: 0px 0px 20px rgb(11 17 52 / 10%);
 
     background: #f2f2f2;
-    background-image: url("static/me.jpg");
+    background-image: url("me.jpg");
     background-size: 100%;
   }
 
