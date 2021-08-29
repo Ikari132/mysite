@@ -10,28 +10,35 @@
     </div>
     <div class="col-md-6 col-sm-12 about">
       <h2 class="about-head">Hello! My name is Anton</h2>
-      <h5 class="about-body">I'm a web developer.</h5>
+      <h5 class="about-body">
+        I'm a web developer. I have over 5 years of experience. I've dealt with
+        both product development and startups.
+      </h5>
+
+      <div class="row my-5 py-3 contacts-row">
+        <div class="col-12 pb-2">
+          <h5>Contacts:</h5>
+        </div>
+        <div class="col contacts">
+          <div class="contact">
+            <a
+              href="https://www.linkedin.com/in/anton-aksionau/"
+              target="_blank"
+            >
+              <FaLinkedin />
+            </a>
+          </div>
+          <div class="contact">
+            <a href="https://twitter.com/AntonAksionau" target="_blank">
+              <FaTwitterSquare />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="row my-5 py-3 justify-content-center contacts-row">
-    <div class="col-12 text-center pb-2">
-      <h2>Contacts</h2>
-    </div>
-    <div class="col contacts">
-      <div class="contact">
-        <a href="https://www.linkedin.com/in/anton-aksionau/" target="_blank">
-          <FaLinkedin />
-        </a>
-      </div>
-      <div class="contact">
-        <a href="https://twitter.com/AntonAksionau" target="_blank">
-          <FaTwitterSquare />
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="row my-5 justify-content-center">
+  <!-- <div class="row my-5 justify-content-center">
     <div class="col-md-4 col-sm-12">
       <a href="/projects" class="card-link">
         <div class="card mb-3" style="max-width: 540px;">
@@ -57,15 +64,10 @@
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-4">
-              <img
-                src="blog-bg.jpg"
-                class="img-fluid"
-                alt="Blog background"
-              />
+              <img src="blog-bg.jpg" class="img-fluid" alt="Blog background" />
             </div>
             <div class="col-8 card-content">
               <div class="card-body">
-                <!-- <h3>My blog</h3> -->
                 <h5 class="card-title">My blog</h5>
               </div>
             </div>
@@ -73,13 +75,13 @@
         </div>
       </a>
     </div>
-  </div>
+  </div> -->
 </section>
 
 <style>
   .photo-wrapper {
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     display: flex;
   }
   .photo {
@@ -88,11 +90,13 @@
     height: var(--photo-size);
     /* max-width: 200px;
     max-height: 200px; */
-    border-radius: 50%;
+
+    /* border-radius: 50%; */
+    border-radius: 25px;
     box-shadow: 0px 0px 20px rgb(11 17 52 / 10%);
 
     background: #f2f2f2;
-    background-image: url("me.jpg");
+    background-image: url("/me.jpg");
     background-size: 100%;
   }
 
@@ -106,7 +110,7 @@
   .contacts {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
   }
   .contacts-row {
     /* background: #f2f2f2; */

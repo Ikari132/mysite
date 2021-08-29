@@ -3,6 +3,7 @@
 
 <script lang="ts">
   import { page } from "$app/stores";
+  import FaExternalLinkAlt from "svelte-icons/fa/FaExternalLinkAlt.svelte";
 
   $: paths = [
     {
@@ -45,8 +46,15 @@
                 href={path.href}
                 class="nav-link"
                 class:active={$page.path.includes(path.href)}
-                target={path.external ? "_blank" : "_self"}>{path.label}</a
+                target={path.external ? "_blank" : "_self"}
               >
+                {path.label}
+                {#if path?.external}
+                  <div class="nav-icon">
+                    <FaExternalLinkAlt />
+                  </div>
+                {/if}
+              </a>
             </li>
           {/each}
         </ul>
@@ -79,19 +87,18 @@
   .navbar-brand {
     font-weight: 700;
   }
-  .navbar {
-    /* background: #000; */
-    /* color: #fff; */
-  }
-  /* .page-header {
-    min-height: 56px;
+  .nav-link {
     display: flex;
     align-items: center;
-    padding: 10px;
-    background: #000;
-    color: #fff;
+  }
+  .nav-icon {
+    height: 16px;
+    width: 16px;
 
-    font-weight: 700;
-    font-size: 2rem;
-  } */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 5px;
+  }
 </style>
