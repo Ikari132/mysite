@@ -17,16 +17,16 @@
 
 		
 
-		<link rel="modulepreload" href="/./app/start-b9ebaf1a.js">
-		<link rel="modulepreload" href="/./app/chunks/vendor-ac0f2cf7.js">
-		<link rel="modulepreload" href="/./app/pages/__layout.svelte-6fe21e22.js">
-		<link rel="modulepreload" href="/./app/pages/projects/counter.svelte-b4232166.js">
-		<link rel="stylesheet" href="/./app/assets/start-a8cd1609.css">
-		<link rel="stylesheet" href="/./app/assets/vendor-4d25fe4c.css">
-		<link rel="stylesheet" href="/./app/assets/pages/__layout.svelte-ea24b3d0.css">
+		<link rel="modulepreload" href="/./_app/start-a9bebc76.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-ea2a0e8e.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-89e4b8a5.js">
+		<link rel="modulepreload" href="/./_app/pages/projects/counter.svelte-8dc61681.js">
+		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
+		<link rel="stylesheet" href="/./_app/assets/vendor-4d25fe4c.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-e2e8a697.css">
 
 		<script type="module">
-			import { start } from "/./app/start-b9ebaf1a.js";
+			import { start } from "/./_app/start-a9bebc76.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
@@ -39,8 +39,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/./app/pages/__layout.svelte-6fe21e22.js"),
-						import("/./app/pages/projects/counter.svelte-b4232166.js")
+						import("/./_app/pages/__layout.svelte-89e4b8a5.js"),
+						import("/./_app/pages/projects/counter.svelte-8dc61681.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -58,11 +58,15 @@
 
 
 <div class="page-wrapper with-navbar">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light svelte-ho3qe5"><div class="container-fluid"><a href="/" class="navbar-brand svelte-ho3qe5">Anton Aksionau </a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"><div class="container-fluid"><a href="/" class="navbar-brand svelte-8h40wr">Anton Aksionau </a>
       
-      <div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav"><li class="nav-item"><a href="/blog" class="nav-link" target="_self">Blog</a>
-            </li><li class="nav-item"><a href="/projects" class="nav-link active" target="_self">Projects</a>
-            </li><li class="nav-item"><a href="https://docs.google.com/document/d/1VNF5UTknfN__9SaHCr5qDTtTsm4bI0j9SMEX-txNVEI/edit?usp=sharing" class="nav-link" target="_blank">CV</a>
+      <div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav"><li class="nav-item"><a href="/blog" class="nav-link svelte-8h40wr" target="_self">Blog
+                </a>
+            </li><li class="nav-item"><a href="/projects" class="nav-link svelte-8h40wr active" target="_self">Projects
+                </a>
+            </li><li class="nav-item"><a href="https://docs.google.com/document/d/1VNF5UTknfN__9SaHCr5qDTtTsm4bI0j9SMEX-txNVEI/edit?usp=sharing" class="nav-link svelte-8h40wr" target="_blank">CV
+                <div class="nav-icon svelte-8h40wr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svelte-c8tyih"><path d="M576 24v127.984c0 21.461-25.96 31.98-40.971 16.971l-35.707-35.709-243.523 243.523c-9.373 9.373-24.568 9.373-33.941 0l-22.627-22.627c-9.373-9.373-9.373-24.569 0-33.941L442.756 76.676l-35.703-35.705C391.982 25.9 402.656 0 424.024 0H552c13.255 0 24 10.745 24 24zM407.029 270.794l-16 16A23.999 23.999 0 0 0 384 303.765V448H64V128h264a24.003 24.003 0 0 0 16.97-7.029l16-16C376.089 89.851 365.381 64 344 64H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V287.764c0-21.382-25.852-32.09-40.971-16.97z"></path></svg>
+                  </div></a>
             </li></ul></div></div></nav>
   
   <main class="container-fluid"><section class="content">Counter</section></main>
