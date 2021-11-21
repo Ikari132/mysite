@@ -25,7 +25,7 @@
 <div class="page-wrapper with-navbar">
   <!-- justify-content-between -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
+    <div class="container">
       <a href="/" class="navbar-brand"> Anton Aksionau </a>
       <!-- <button
         class="navbar-toggler"
@@ -71,7 +71,7 @@
       {/each}
     </ul>
   </nav> -->
-  <main class="container-fluid">
+  <main class="container">
     <slot />
   </main>
 </div>

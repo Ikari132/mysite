@@ -2,7 +2,7 @@
   <h2 class="title mb-5">My projects</h2>
 
   <div class="row">
-    <div class="col-6">
+    <div class="col-12">
       <a href="/projects/counter" class="card-link">
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
@@ -64,8 +64,9 @@
 
 <style>
   .title {
-    font-size: 2.4rem;
-    font-weight: 700;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
   }
   .card-link {
     text-decoration: none;

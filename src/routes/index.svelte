@@ -1,6 +1,14 @@
 <script lang="ts">
   import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
   import FaTwitterSquare from "svelte-icons/fa/FaTwitterSquare.svelte";
+  // import FaSpinner from "svelte-icons/fa/FaSpinner.svelte";
+
+  let users = 0;
+  fetch("http://143.47.176.226/stats")
+    .then((r) => r.json())
+    .then((r) => {
+      users = r.users;
+    });
 </script>
 
 <section class="container">
@@ -13,6 +21,15 @@
       <h5 class="about-body">
         I'm a web developer. I have over 5 years of experience. I've dealt with
         both product development and startups.
+      </h5>
+      <h5 class="about-body">
+        <span class="customers">
+          {#if users}
+            {users}
+          {:else}
+            ---
+          {/if}
+        </span> people already use my products
       </h5>
 
       <div class="row my-5 py-3 contacts-row">
@@ -144,4 +161,9 @@
   /* .card-img-top {
     max-height: 150px;
   } */
+
+  .customers {
+    font-size: 1rem;
+    font-weight: 700;
+  }
 </style>
