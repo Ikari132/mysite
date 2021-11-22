@@ -4,7 +4,7 @@
   // import FaSpinner from "svelte-icons/fa/FaSpinner.svelte";
 
   let users = 0;
-  fetch("http://143.47.176.226/stats")
+  fetch("https://stats.snailty.com/stats")
     .then((r) => r.json())
     .then((r) => {
       users = r.users;
