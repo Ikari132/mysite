@@ -29,7 +29,7 @@
         <div class="container-fluid">
             <div class="custom-content col-12 col-sm-11 col-md-10 col-xl-8 mx-auto">
                 <div class="row">
-                    <div class="col">
+                    <div class="col d-flex align-items-center">
                         <a href="/" class="navbar-brand"> Anton Aksionau </a>
                     </div>
                     <div class="col">

@@ -1,6 +1,8 @@
 <script lang="ts">
     import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
     import FaTwitterSquare from "svelte-icons/fa/FaTwitterSquare.svelte";
+    import FaEnvelopeSquare from "svelte-icons/fa/FaEnvelopeSquare.svelte";
+    import CVIcon from "../components/CVIcon.svelte";
     // import FaSpinner from "svelte-icons/fa/FaSpinner.svelte";
 
     let users = 0;
@@ -15,7 +17,7 @@
     <div class="row my-5 d-flex flex-sm-row flex-column-reverse">
         <div class="col-sm-6 col-12 d-flex flex-column justify-content-between about">
             <div>
-                <h1 class="fw-bold text-sm-start text-center">Hello! I'm Anton.</h1>
+                <h1 class="fw-bold text-sm-start text-center">Hello! I'm Anton</h1>
                 <h5 class="text-sm-start text-center">Web developer</h5>
                 <h5 class="text-sm-start text-center">Entrepreneur</h5>
                 <h5 class="text-sm-start text-center">
@@ -39,6 +41,19 @@
                     <div class="contact">
                         <a href="https://twitter.com/AntonAksionau" target="_blank">
                             <FaTwitterSquare />
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a href="mailto:anton.aksionau@gmail.com">
+                            <FaEnvelopeSquare />
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a
+                            href="https://docs.google.com/document/d/1VNF5UTknfN__9SaHCr5qDTtTsm4bI0j9SMEX-txNVEI/edit?usp=sharing"
+                            target="_blank"
+                        >
+                            <CVIcon />
                         </a>
                     </div>
                 </div>
