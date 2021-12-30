@@ -27,7 +27,7 @@
 <div class="page-wrapper with-navbar d-flex flex-column">
     <nav class="navbar navbar-expand navbar-light bg-transparent">
         <div class="container-fluid">
-            <div class="custom-content col-12 col-md-10 col-xl-8 mx-auto">
+            <div class="custom-content col-12 col-sm-11 col-md-10 col-xl-8 mx-auto">
                 <div class="row">
                     <div class="col">
                         <a href="/" class="navbar-brand"> Anton Aksionau </a>
@@ -62,7 +62,7 @@
         </div>
     </nav>
     <main class="container-fluid">
-        <div class="custom-content col-12 col-md-10 col-xl-8 mx-auto">
+        <div class="custom-content col-12 col-sm-11 col-md-10 col-xl-8 mx-auto">
             <slot />
         </div>
     </main>
@@ -111,6 +111,46 @@
     :global(a:hover) {
         color: var(--color-primary-600);
     }
+
+    :global(.btn-primary) {
+        background-color: var(--color-primary-600);
+        border-color: var(--color-primary-600);
+    }
+    :global(.btn-primary:hover) {
+        background-color: var(--color-primary-700);
+        border-color: var(--color-primary-700);
+    }
+    :global(.btn-check:focus + .btn-primary) {
+        background-color: var(--color-primary-700);
+        border-color: var(--color-primary-700);
+        box-shadow: 0 0 0 0.25rem var(--color-primary-300);
+    }
+    :global(.btn-primary:focus) {
+        color: #fff;
+        background-color: var(--color-primary-700);
+        border-color: var(--color-primary-700);
+        box-shadow: 0 0 0 0.25rem var(--color-primary-300);
+    }
+    :global(.btn-primary:active) {
+        background-color: var(--color-primary-800);
+        border-color: var(--color-primary-800);
+    }
+    :global(.btn-primary.active) {
+        background-color: var(--color-primary-800);
+        border-color: var(--color-primary-800);
+    }
+    :global(.btn-primary:active:focus) {
+        box-shadow: 0 0 0 0.25rem var(--color-primary-300);
+    }
+    :global(.btn-primary.active:focus) {
+        box-shadow: 0 0 0 0.25rem var(--color-primary-300);
+    }
+    /* .btn-primary:disabled,
+    .btn-primary.disabled {
+        color: #fff;
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+    } */
 
     :global(html) {
         height: 100%;

@@ -1,11 +1,11 @@
 <section class="container">
-    <div class="row mt-3 mb-5">
+    <div class="row my-5">
         <div class="col-sm-6 col-12 mb-3">
             <div class="card">
                 <img src="/twity.png" class="card-img-top" alt="twity-logo" />
                 <div class="card-body">
                     <h3 class="fw-bold">Twity</h3>
-                    <h6>Extension for removing Tweets</h6>
+                    <h6>Extension for deleting Tweets</h6>
                     <a href="/projects/twity" class="stretched-link" />
                 </div>
             </div>

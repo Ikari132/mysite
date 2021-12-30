@@ -12,11 +12,21 @@
 </script>
 
 <section>
-    <div class="row my-5">
+    <div class="row my-5 d-flex flex-sm-row flex-column-reverse">
         <div class="col-sm-6 col-12 d-flex flex-column justify-content-between about">
             <div>
                 <h1 class="fw-bold text-sm-start text-center">Hello! I'm Anton.</h1>
                 <h5 class="text-sm-start text-center">Web developer</h5>
+                <h5 class="text-sm-start text-center">Entrepreneur</h5>
+                <h5 class="text-sm-start text-center">
+                    <span class="customers">
+                        {#if users}
+                            {users}
+                        {:else}
+                            ---
+                        {/if}
+                    </span> people already use my products
+                </h5>
             </div>
 
             <div class="row py-3 contacts-row">
@@ -35,20 +45,12 @@
             </div>
         </div>
         <div class="col-sm-6 col-12 d-flex justify-content-center justify-content-sm-end">
-            <div class="photo" />
+            <div class="photo mb-3" />
         </div>
     </div>
 
     <div class="row my-3">
-        <h4 class="fw-bolder">
-            <span class="customers">
-                {#if users}
-                    {users}
-                {:else}
-                    ---
-                {/if}
-            </span> people already use my products
-        </h4>
+        <h4 class="text-secondary text-sm-start text-center">Projects</h4>
     </div>
 
     <div class="row mt-3 mb-5">
@@ -57,7 +59,7 @@
                 <img src="/twity.png" class="card-img-top" alt="twity-logo" />
                 <div class="card-body">
                     <h3 class="fw-bold">Twity</h3>
-                    <h6>Extension for removing Tweets</h6>
+                    <h6>Extension for deleting Tweets</h6>
                     <a href="/projects/twity" class="stretched-link" />
                 </div>
             </div>
@@ -125,5 +127,11 @@
     .customers {
         color: var(--color-primary-600);
         font-weight: bold;
+    }
+
+    @media (max-width: 576px) {
+        .photo {
+            --photo-size: 160px;
+        }
     }
 </style>
