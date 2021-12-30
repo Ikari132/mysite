@@ -24,7 +24,7 @@
     ];
 </script>
 
-<div class="page-wrapper with-navbar">
+<div class="page-wrapper with-navbar d-flex flex-column">
     <nav class="navbar navbar-expand navbar-light bg-transparent">
         <div class="container-fluid">
             <div class="custom-content col-12 col-md-10 col-xl-8 mx-auto">
@@ -66,7 +66,7 @@
             <slot />
         </div>
     </main>
-    <footer class="container-fluid">
+    <footer class="container-fluid mt-auto">
         <div class="text-secondary text-center p-3">Copyright © 2021 Anton Aksionau</div>
     </footer>
 </div>
@@ -112,8 +112,24 @@
         color: var(--color-primary-600);
     }
 
+    :global(html) {
+        height: 100%;
+    }
+
     :global(body) {
         background: var(--color-gray-50);
+        min-height: 100%;
+        height: 100%;
+    }
+
+    :global(#svelte) {
+        min-height: 100%;
+        height: 100%;
+    }
+
+    .page-wrapper {
+        min-height: 100%;
+        height: 100%;
     }
 
     .custom-content {
