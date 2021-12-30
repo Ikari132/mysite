@@ -1,169 +1,129 @@
 <script lang="ts">
-  import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
-  import FaTwitterSquare from "svelte-icons/fa/FaTwitterSquare.svelte";
-  // import FaSpinner from "svelte-icons/fa/FaSpinner.svelte";
+    import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
+    import FaTwitterSquare from "svelte-icons/fa/FaTwitterSquare.svelte";
+    // import FaSpinner from "svelte-icons/fa/FaSpinner.svelte";
 
-  let users = 0;
-  fetch("https://stats.snailty.com/stats")
-    .then((r) => r.json())
-    .then((r) => {
-      users = r.users;
-    });
+    let users = 0;
+    fetch("https://stats.snailty.com/stats")
+        .then((r) => r.json())
+        .then((r) => {
+            users = r.users;
+        });
 </script>
 
-<section class="container">
-  <div class="row my-5">
-    <div class="col-md-6 col-sm-12 photo-wrapper">
-      <div class="photo" />
-    </div>
-    <div class="col-md-6 col-sm-12 about">
-      <h2 class="about-head">Hello! My name is Anton</h2>
-      <h5 class="about-body">
-        I'm a web developer. I have over 5 years of experience. I've dealt with
-        both product development and startups.
-      </h5>
-      <h5 class="about-body">
-        <span class="customers">
-          {#if users}
-            {users}
-          {:else}
-            ---
-          {/if}
-        </span> people already use my products
-      </h5>
+<section>
+    <div class="row my-5">
+        <div class="col-sm-6 col-12 d-flex flex-column justify-content-between about">
+            <div>
+                <h1 class="fw-bold text-sm-start text-center">Hello! I'm Anton.</h1>
+                <h5 class="text-sm-start text-center">Web developer</h5>
+            </div>
 
-      <div class="row my-5 py-3 contacts-row">
-        <div class="col-12 pb-2">
-          <h5>Contacts:</h5>
+            <div class="row py-3 contacts-row">
+                <div class="col d-flex justify-content-center justify-content-sm-start gap-2">
+                    <div class="contact">
+                        <a href="https://www.linkedin.com/in/anton-aksionau/" target="_blank">
+                            <FaLinkedin />
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a href="https://twitter.com/AntonAksionau" target="_blank">
+                            <FaTwitterSquare />
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col contacts">
-          <div class="contact">
-            <a
-              href="https://www.linkedin.com/in/anton-aksionau/"
-              target="_blank"
-            >
-              <FaLinkedin />
-            </a>
-          </div>
-          <div class="contact">
-            <a href="https://twitter.com/AntonAksionau" target="_blank">
-              <FaTwitterSquare />
-            </a>
-          </div>
+        <div class="col-sm-6 col-12 d-flex justify-content-center justify-content-sm-end">
+            <div class="photo" />
         </div>
-      </div>
     </div>
-  </div>
 
-  <!-- <div class="row my-5 justify-content-center">
-    <div class="col-md-4 col-sm-12">
-      <a href="/projects" class="card-link">
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-4">
-              <img
-                src="projects-bg.jpg"
-                class="img-fluid"
-                alt="Projects background"
-              />
-            </div>
-            <div class="col-8 card-content">
-              <div class="card-body">
-                <h5 class="card-title">My projects</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+    <div class="row my-3">
+        <h4 class="fw-bolder">
+            <span class="customers">
+                {#if users}
+                    {users}
+                {:else}
+                    ---
+                {/if}
+            </span> people already use my products
+        </h4>
     </div>
-    <div class="col-md-4 col-sm-12">
-      <a href="/blog" class="card-link">
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-4">
-              <img src="blog-bg.jpg" class="img-fluid" alt="Blog background" />
+
+    <div class="row mt-3 mb-5">
+        <div class="col-sm-6 col-12 mb-3">
+            <div class="card">
+                <img src="/twity.png" class="card-img-top" alt="twity-logo" />
+                <div class="card-body">
+                    <h3 class="fw-bold">Twity</h3>
+                    <h6>Extension for removing Tweets</h6>
+                    <a href="/projects/twity" class="stretched-link" />
+                </div>
             </div>
-            <div class="col-8 card-content">
-              <div class="card-body">
-                <h5 class="card-title">My blog</h5>
-              </div>
-            </div>
-          </div>
         </div>
-      </a>
+        <div class="col-sm-6 col-12 mb-3">
+            <div class="card">
+                <img src="/counter.png" class="card-img-top counter-image" alt="counter-logo" />
+                <div class="card-body">
+                    <h3 class="fw-bold">Working time counter</h3>
+                    <h6>Extension for tracking working hours</h6>
+                    <a href="/projects/counter" class="stretched-link" />
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mt-3 d-flex justify-content-center">
+            <a href="/projects">Show more</a>
+        </div>
     </div>
-  </div> -->
 </section>
 
 <style>
-  .photo-wrapper {
-    justify-content: center;
-    /* align-items: center; */
-    display: flex;
-  }
-  .photo {
-    --photo-size: 200px;
-    width: var(--photo-size);
-    height: var(--photo-size);
-    /* max-width: 200px;
-    max-height: 200px; */
+    .photo {
+        --photo-size: 200px;
+        width: var(--photo-size);
+        height: var(--photo-size);
+        border-radius: 16px;
+        box-shadow: 0 1px 4px 0 #0000003d;
+        background: #f2f2f2;
+        background-image: url("/me.jpg");
+        background-size: 100%;
+    }
 
-    /* border-radius: 50%; */
-    border-radius: 25px;
-    box-shadow: 0px 0px 20px rgb(11 17 52 / 10%);
+    .contact {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+    }
 
-    background: #f2f2f2;
-    background-image: url("/me.jpg");
-    background-size: 100%;
-  }
+    .card {
+        box-shadow: 0 1px 4px 0 #0000003d;
+        border: none;
+        border-radius: 8px;
+        overflow: hidden;
 
-  .about-head {
-    /* font-size: 2.4rem; */
-    font-weight: 700;
-  }
-  .about-body {
-    /* font-size: 1.6rem; */
-  }
-  .contacts {
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-  }
-  .contacts-row {
-    /* background: #f2f2f2; */
-  }
-  .contact {
-    width: 32px;
-    height: 32px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  .contact:first-child {
-    margin-left: 0;
-  }
-  .card-link {
-    text-decoration: none;
-    color: #212529;
-  }
-  .card {
-    box-shadow: 0px 0px 20px rgb(11 17 52 / 10%);
-    border: none;
-    border-radius: 25px;
-    overflow: hidden;
-  }
-  .card img {
-    border-radius: 25px;
-  }
-  .card-content {
-    display: flex;
-    align-items: center;
-  }
-  /* .card-img-top {
-    max-height: 150px;
-  } */
+        height: 100%;
 
-  .customers {
-    font-size: 1rem;
-    font-weight: 700;
-  }
+        cursor: pointer;
+        transition: box-shadow ease-out 0.2s;
+    }
+
+    .card:hover {
+        box-shadow: 0 1px 16px 0 #0000003d;
+    }
+    .card img {
+        max-height: 160px;
+        width: 100%;
+        object-fit: contain;
+        background: var(--color-gray-100);
+        padding: 10px;
+    }
+    .card img.counter-image {
+        background: #323639;
+    }
+
+    .customers {
+        color: var(--color-primary-600);
+        font-weight: bold;
+    }
 </style>
