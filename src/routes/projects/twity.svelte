@@ -1,14 +1,13 @@
 <script lang="ts">
     import FaChrome from "svelte-icons/fa/FaChrome.svelte";
-    import FaFireFox from "svelte-icons/fa/FaFireFox.svelte";
 </script>
 
 <section>
     <div class="row my-5 d-flex flex-sm-row flex-column-reverse">
         <div class="col-sm-6 col-12 d-flex flex-column justify-content-between about">
             <div>
-                <h1 class="fw-bold text-sm-start text-center">Working time counter</h1>
-                <h5 class="text-sm-start text-center">Extension for tracking working hours</h5>
+                <h1 class="fw-bold text-sm-start text-center">Twity</h1>
+                <h5 class="text-sm-start text-center">Extension for deleting Tweets</h5>
             </div>
 
             <div class="row py-3 links-row">
@@ -19,21 +18,11 @@
                     <div class="link">
                         <a
                             class="btn btn-primary button-with-icon"
-                            href="https://chrome.google.com/webstore/detail/working-time-counter/lakpjellnlajgbedjhejhdbkmphhfolo"
+                            href="https://chrome.google.com/webstore/detail/twity/mnencakcmnofdmpgmklkknklikgpodoo"
                             target="_blank"
                         >
                             <div class="icon"><FaChrome /></div>
                             Chrome
-                        </a>
-                    </div>
-                    <div class="link">
-                        <a
-                            class="btn btn-primary button-with-icon"
-                            href="https://addons.mozilla.org/en-US/firefox/addon/working-time-counter/"
-                            target="_blank"
-                        >
-                            <div class="icon"><FaFireFox /></div>
-                            FireFox
                         </a>
                     </div>
                 </div>
@@ -50,7 +39,7 @@
         --photo-size: 200px;
         width: var(--photo-size);
         height: var(--photo-size);
-        background-image: url("/counter-logo.png");
+        background-image: url("/twity.png");
         background-size: 100%;
     }
 

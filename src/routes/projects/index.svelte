@@ -1,84 +1,52 @@
 <section class="container">
-  <h2 class="title mb-5">My projects</h2>
-
-  <div class="row">
-    <div class="col-12">
-      <a href="/projects/counter" class="card-link">
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-4">
-              <img src="counter.jpg" class="img-fluid" alt="" />
+    <div class="row my-5">
+        <div class="col-sm-6 col-12 mb-3">
+            <div class="card">
+                <img src="/twity.png" class="card-img-top" alt="twity-logo" />
+                <div class="card-body">
+                    <h3 class="fw-bold">Twity</h3>
+                    <h6>Extension for deleting Tweets</h6>
+                    <a href="/projects/twity" class="stretched-link" />
+                </div>
             </div>
-            <div class="col-8 card-content">
-              <div class="card-body">
-                <h5 class="card-title">Working time counter</h5>
-                <p class="card-text">
-                  Browser extension that helps you track time
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </a>
+        <div class="col-sm-6 col-12 mb-3">
+            <div class="card">
+                <img src="/counter.png" class="card-img-top counter-image" alt="counter-logo" />
+                <div class="card-body">
+                    <h3 class="fw-bold">Working time counter</h3>
+                    <h6>Extension for tracking working hours</h6>
+                    <a href="/projects/counter" class="stretched-link" />
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- <div class="col-6">
-      <a href="/projects/counter" class="card-link">
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-4">
-              <img src="static/counter.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="col-8 card-content">
-              <div class="card-body">
-                <h5 class="card-title">Working time counter</h5>
-                <p class="card-text">
-                  Browser extension that helps you track time
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div> -->
-    <!-- <div class="col-6">
-      <a href="/projects/counter" class="card-link">
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-4">
-              <img src="static/counter.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="col-8 card-content">
-              <div class="card-body">
-                <h5 class="card-title">Working time counter</h5>
-                <p class="card-text">
-                  Browser extension that helps you track time
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div> -->
-  </div>
 </section>
 
 <style>
-  .title {
-    font-size: 1.2em;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.5);
-  }
-  .card-link {
-    text-decoration: none;
-    color: #212529;
-  }
-  .card {
-    box-shadow: 0px 0px 20px rgb(11 17 52 / 10%);
-    border: none;
-    border-radius: 25px;
-    overflow: hidden;
-  }
-  .card img {
-    border-radius: 25px;
-  }
+    .card {
+        box-shadow: 0 1px 4px 0 #0000003d;
+        border: none;
+        border-radius: 8px;
+        overflow: hidden;
+
+        height: 100%;
+
+        cursor: pointer;
+        transition: box-shadow ease-out 0.2s;
+    }
+
+    .card:hover {
+        box-shadow: 0 1px 16px 0 #0000003d;
+    }
+    .card img {
+        max-height: 160px;
+        width: 100%;
+        object-fit: contain;
+        background: var(--color-gray-100);
+        padding: 10px;
+    }
+    .card img.counter-image {
+        background: #323639;
+    }
 </style>
