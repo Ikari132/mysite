@@ -41,8 +41,8 @@
                                             href={path.href}
                                             class="nav-link"
                                             class:active={path.root
-                                                ? $page.path === "" || $page.path === "/"
-                                                : $page.path.includes(path.href)}
+                                                ? $page.url.pathname === "" || $page.url.pathname === "/"
+                                                : $page.url.pathname.includes(path.href)}
                                             target={path.external ? "_blank" : "_self"}
                                         >
                                             {path.label}
