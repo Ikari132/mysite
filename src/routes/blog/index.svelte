@@ -7,7 +7,7 @@
         <div class="card mb-3" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-4">
-              <img src="counter.jpg" class="img-fluid" alt="" />
+              <!-- <img src="counter.jpg" class="img-fluid" alt="" /> -->
             </div>
             <div class="col-8 card-content">
               <div class="card-body">
