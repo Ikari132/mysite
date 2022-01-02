@@ -5,6 +5,7 @@
 	<meta charset="utf-8" />
 	<link rel="icon" href="/favicon.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Anton Aksionau - Web developer</title>
 	<style>
 		html,
 		body {
@@ -17,22 +18,21 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-88b4e873.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-480e33fb.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-6a7fe3b5.js">
-		<link rel="modulepreload" href="/_app/pages/projects/index.svelte-39b32e5e.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/_app/assets/vendor-86f8c920.css">
-		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-20888532.css">
-		<link rel="stylesheet" href="/_app/assets/pages/projects/index.svelte-cc4ebe5c.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-507ad1a1.css">
+		<link rel="stylesheet" href="/_app/assets/pages/projects/index.svelte-fe4c1489.css">
+		<link rel="modulepreload" href="/_app/start-46410122.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-6b997d42.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-304a3ffb.js">
+		<link rel="modulepreload" href="/_app/pages/projects/index.svelte-c10f5949.js">
 
 		<script type="module">
-			import { start } from "/_app/start-88b4e873.js";
+			import { start } from "/_app/start-46410122.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
 				session: {},
-				host: location.host,
 				route: true,
 				spa: false,
 				trailing_slash: "never",
@@ -40,17 +40,17 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-6a7fe3b5.js"),
-						import("/_app/pages/projects/index.svelte-39b32e5e.js")
+						import("/_app/pages/__layout.svelte-304a3ffb.js"),
+						import("/_app/pages/projects/index.svelte-c10f5949.js")
 					],
-					page: {
-						host: location.host, // TODO this is redundant
-						path: "/projects",
-						query: new URLSearchParams(""),
-						params: {}
-					}
+					url: new URL("sveltekit://prerender/projects"),
+					params: {}
 				}
 			});
+		</script><script>
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('/service-worker.js');
+			}
 		</script>
 </head>
 
@@ -58,33 +58,26 @@
 	<div id="svelte">
 
 
-<div class="page-wrapper with-navbar">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light"><div class="container"><a href="/" class="navbar-brand svelte-8h40wr">Anton Aksionau </a>
-      
-      <div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav"><li class="nav-item"><a href="/blog" class="nav-link svelte-8h40wr" target="_self">Blog
-                </a>
-            </li><li class="nav-item"><a href="/projects" class="nav-link svelte-8h40wr active" target="_self">Projects
-                </a>
-            </li><li class="nav-item"><a href="https://docs.google.com/document/d/1VNF5UTknfN__9SaHCr5qDTtTsm4bI0j9SMEX-txNVEI/edit?usp=sharing" class="nav-link svelte-8h40wr" target="_blank">CV
-                <div class="nav-icon svelte-8h40wr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svelte-c8tyih"><path d="M576 24v127.984c0 21.461-25.96 31.98-40.971 16.971l-35.707-35.709-243.523 243.523c-9.373 9.373-24.568 9.373-33.941 0l-22.627-22.627c-9.373-9.373-9.373-24.569 0-33.941L442.756 76.676l-35.703-35.705C391.982 25.9 402.656 0 424.024 0H552c13.255 0 24 10.745 24 24zM407.029 270.794l-16 16A23.999 23.999 0 0 0 384 303.765V448H64V128h264a24.003 24.003 0 0 0 16.97-7.029l16-16C376.089 89.851 365.381 64 344 64H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V287.764c0-21.382-25.852-32.09-40.971-16.97z"></path></svg>
-                  </div></a>
-            </li></ul></div></div></nav>
-  
-  <main class="container"><section class="container"><h2 class="title mb-5 svelte-16ekhpq">My projects</h2>
-
-  <div class="row"><div class="col-12"><a href="/projects/counter" class="card-link svelte-16ekhpq"><div class="card mb-3 svelte-16ekhpq" style="max-width: 540px;"><div class="row g-0"><div class="col-4"><img src="counter.jpg" class="img-fluid svelte-16ekhpq" alt=""></div>
-            <div class="col-8 card-content"><div class="card-body"><h5 class="card-title">Working time counter</h5>
-                <p class="card-text">Browser extension that helps you track time
-                </p></div></div></div></div></a></div>
-    
-    </div>
-</section></main>
+<div class="page-wrapper with-navbar d-flex flex-column svelte-i8g00n"><nav class="navbar navbar-expand navbar-light bg-transparent svelte-i8g00n"><div class="container-fluid"><div class="custom-content col-12 col-sm-11 col-md-10 col-xl-8 mx-auto svelte-i8g00n"><div class="row"><div class="col d-flex align-items-center"><a href="/" class="navbar-brand svelte-i8g00n">Anton Aksionau </a></div>
+                    <div class="col"><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav ms-auto"><li class="nav-item"><a href="/" class="nav-link svelte-i8g00n" target="_self">Home
+                                            </a>
+                                    </li><li class="nav-item"><a href="/projects" class="nav-link svelte-i8g00n active" target="_self">Projects
+                                            </a>
+                                    </li></ul></div></div></div></div></div></nav>
+    <main class="container-fluid"><div class="custom-content col-12 col-sm-11 col-md-10 col-xl-8 mx-auto svelte-i8g00n">
+<section class="container"><div class="row my-5"><div class="col-sm-6 col-12 mb-3"><div class="card svelte-1fc85o2"><img src="/twity.png" class="card-img-top svelte-1fc85o2" alt="twity-logo">
+                <div class="card-body"><h3 class="fw-bold">Twity</h3>
+                    <h6>Extension for deleting Tweets</h6>
+                    <a href="/projects/twity" class="stretched-link"></a></div></div></div>
+        <div class="col-sm-6 col-12 mb-3"><div class="card svelte-1fc85o2"><img src="/counter.png" class="card-img-top counter-image svelte-1fc85o2" alt="counter-logo">
+                <div class="card-body"><h3 class="fw-bold">Working time counter</h3>
+                    <h6>Extension for tracking working hours</h6>
+                    <a href="/projects/counter" class="stretched-link"></a></div></div></div></div>
+</section></div></main>
+    <footer class="container-fluid mt-auto"><div class="text-secondary text-center p-3">Copyright © 2021 Anton Aksionau</div></footer>
 </div>
 
-
-
-			
-		</div>
+</div>
 </body>
 
 </html>
