@@ -1,3 +1,4 @@
+<!-- svelte-ignore a11y-missing-content -->
 <section class="container">
     <div class="row my-5">
         <div class="col-sm-6 col-12 mb-3">

@@ -12,7 +12,7 @@
             users = r.users;
         });
 </script>
-
+<!-- svelte-ignore a11y-missing-content -->
 <section>
     <div class="row my-5 d-flex flex-sm-row flex-column-reverse">
         <div class="col-sm-6 col-12 d-flex flex-column justify-content-between about">

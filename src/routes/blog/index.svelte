@@ -39,7 +39,7 @@
     border-radius: 25px;
     overflow: hidden;
   }
-  .card img {
+  /* .card img {
     border-radius: 25px;
-  }
+  } */
 </style>

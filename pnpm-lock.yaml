@@ -8,7 +8,6 @@ specifiers:
   bootstrap: ^5.0.2
   eslint: ^7.30.0
   eslint-plugin-svelte3: ^3.2.0
-  halfmoon: ^1.1.1
   mdsvex: ^0.9.8
   svelte: ^3.44.3
   svelte-check: ^2.2.0
@@ -19,7 +18,6 @@ specifiers:
 
 dependencies:
   bootstrap: 5.0.2
-  halfmoon: 1.1.1
   svelte-icons: 2.1.0
 
 devDependencies:
@@ -964,10 +962,6 @@ packages:
   /globrex/0.1.2:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
     dev: true
-
-  /halfmoon/1.1.1:
-    resolution: {integrity: sha512-w/ydT3CixxxxdJP4a3sqSzUnCJFmhvcqE2vQOIsWCfevpqanKlbGQNUwKJH0nKvo13M89eetM3R0gsTOfNLGHA==}
-    dev: false
 
   /has-flag/3.0.0:
     resolution: {integrity: sha1-tdRU3CGZriJWmfNGfloH87lVuv0=}
