@@ -1,6 +1,6 @@
 <script lang="ts">
     import FaChrome from "svelte-icons/fa/FaChrome.svelte";
-    import FaFireFox from "svelte-icons/fa/FaFireFox.svelte";
+    import FaFirefox from "svelte-icons/fa/FaFirefox.svelte";
 </script>
 
 <section>
@@ -32,7 +32,7 @@
                             href="https://addons.mozilla.org/en-US/firefox/addon/working-time-counter/"
                             target="_blank"
                         >
-                            <div class="icon"><FaFireFox /></div>
+                            <div class="icon"><FaFirefox /></div>
                             FireFox
                         </a>
                     </div>
