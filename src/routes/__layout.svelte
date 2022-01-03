@@ -67,7 +67,7 @@
         </div>
     </main>
     <footer class="container-fluid mt-auto">
-        <div class="text-secondary text-center p-3">Copyright © 2021 Anton Aksionau</div>
+        <div class="text-secondary text-center p-3">Copyright © {new Date().getFullYear()} Anton Aksionau</div>
     </footer>
 </div>
 
