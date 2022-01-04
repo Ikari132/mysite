@@ -2,6 +2,14 @@
     import FaChrome from "svelte-icons/fa/FaChrome.svelte";
 </script>
 
+<svelte:head>
+	<meta property="og:title" content="Twity" />
+    <meta property="og:description" content="Extension for deleting Tweets" />
+    <meta property="og:url" content="https://www.aksionau.com/projects/twity" />
+    <meta property="og:image" content="https://www.aksionau.com/twity.png" />
+    <meta property="og:site_name" content="Anton Aksionau - Web developer" />
+</svelte:head>
+
 <section>
     <div class="row my-5 d-flex flex-sm-row flex-column-reverse">
         <div class="col-sm-6 col-12 d-flex flex-column justify-content-between about">
