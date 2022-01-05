@@ -12,6 +12,7 @@
             users = r.users;
         });
 </script>
+
 <!-- svelte-ignore a11y-missing-content -->
 <section>
     <div class="row my-5 d-flex flex-sm-row flex-column-reverse">
@@ -113,28 +114,6 @@
         cursor: pointer;
     }
 
-    .card {
-        box-shadow: 0 1px 4px 0 #0000003d;
-        border: none;
-        border-radius: 8px;
-        overflow: hidden;
-
-        height: 100%;
-
-        cursor: pointer;
-        transition: box-shadow ease-out 0.2s;
-    }
-
-    .card:hover {
-        box-shadow: 0 1px 16px 0 #0000003d;
-    }
-    .card img {
-        max-height: 160px;
-        width: 100%;
-        object-fit: contain;
-        background: var(--color-gray-100);
-        padding: 10px;
-    }
     .card img.counter-image {
         background: #323639;
     }

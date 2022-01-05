@@ -1,5 +1,6 @@
 <script lang="ts">
     import ProjectPage from "../../components/ProjectPage.svelte";
+    import { versions } from "./counter/versions";
 </script>
 
 <ProjectPage
@@ -13,4 +14,5 @@
         },
         { href: "https://addons.mozilla.org/en-US/firefox/addon/working-time-counter/", type: "Firefox" },
     ]}
+    {versions}
 />

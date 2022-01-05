@@ -1,5 +1,6 @@
 <script lang="ts">
     import ProjectPage from "../../components/ProjectPage.svelte";
+    import { versions } from "./twity/versions";
 </script>
 
 <ProjectPage
@@ -9,4 +10,5 @@
     links={[
         { href: "https://chrome.google.com/webstore/detail/twity/mnencakcmnofdmpgmklkknklikgpodoo", type: "Chrome" },
     ]}
+    {versions}
 />

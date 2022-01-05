@@ -2,10 +2,12 @@
     import FaChrome from "svelte-icons/fa/FaChrome.svelte";
     import FaFirefox from "svelte-icons/fa/FaFirefox.svelte";
     import FaSafari from "svelte-icons/fa/FaSafari.svelte";
+    import { page } from "$app/stores";
 
     export let name: string;
     export let description: string;
     export let links: { href: string; type: "Chrome" | "Firefox" | "Safari" }[];
+    export let versions: { version: string; changes: { title: string; description: string }[] }[];
 </script>
 
 <section>
@@ -42,6 +44,24 @@
         </div>
         <div class="col-sm-6 col-12 d-flex justify-content-center justify-content-sm-end">
             <div class="logo mb-3" />
+        </div>
+    </div>
+
+    <div class="row mt-3 mb-5">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="fw-bold">What's new in {versions[0].version}</h3>
+                    <ul>
+                        {#each versions[0].changes as change}
+                            <li>{change.description}</li>
+                        {/each}
+                    </ul>
+                    <div class="d-flex justify-content-center">
+                        <a href="{$page.url.pathname}/whats-new" class="stretched-link">See all versions</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
