@@ -1,6 +1,7 @@
 export const versions = [
     {
         version: "2.2.0",
+        date: "29.12.2021",
         changes: [
             {
                 title: "",

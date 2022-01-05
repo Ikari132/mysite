@@ -7,7 +7,7 @@
     export let name: string;
     export let description: string;
     export let links: { href: string; type: "Chrome" | "Firefox" | "Safari" }[];
-    export let versions: { version: string; changes: { title: string; description: string }[] }[];
+    export let versions: { version: string; date?: string; changes: { title: string; description: string }[] }[];
 </script>
 
 <section>
@@ -51,7 +51,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h3 class="fw-bold">What's new in {versions[0].version}</h3>
+                    <h3 class="fw-bold">What's new in v {versions[0].version}</h3>
                     <ul>
                         {#each versions[0].changes as change}
                             <li>{change.description}</li>
@@ -70,9 +70,12 @@
     .logo {
         --logo-size: 200px;
         width: var(--logo-size);
+        min-width: var(--logo-size);
         height: var(--logo-size);
+        min-height: var(--logo-size);
         background-image: var(--logo-image);
         background-size: 100%;
+        background-repeat: no-repeat;
     }
 
     .button-with-icon {
@@ -89,7 +92,7 @@
 
     @media (max-width: 576px) {
         .logo {
-            --photo-size: 100px;
+            --logo-size: 100px;
         }
     }
 </style>

@@ -1,6 +1,6 @@
 <script lang="ts">
-    import ProjectPage from "../../components/ProjectPage.svelte";
-    import { versions } from "./counter/versions";
+    import ProjectPage from "../../../components/ProjectPage.svelte";
+    import { versions } from "./versions";
 </script>
 
 <ProjectPage
