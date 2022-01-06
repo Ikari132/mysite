@@ -1,14 +1,11 @@
 <script lang="ts">
+    import MetaTagsProvider from "../../../components/MetaTagsProvider.svelte";
     import ProjectPage from "../../../components/ProjectPage.svelte";
     import { versions } from "./versions";
 </script>
 
 <svelte:head>
-	<meta property="og:title" content="Twity" />
-    <meta property="og:description" content="Extension for deleting Tweets" />
-    <meta property="og:url" content="https://www.aksionau.com/projects/twity" />
-    <meta property="og:image" content="https://www.aksionau.com/twity.png" />
-    <meta property="og:site_name" content="Anton Aksionau - Web developer" />
+    <MetaTagsProvider title="Twity" description="Extension for deleting Tweets" name="twity"/>
 </svelte:head>
 
 <ProjectPage

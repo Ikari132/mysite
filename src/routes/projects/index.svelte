@@ -1,3 +1,11 @@
+<script lang="ts">
+    import MetaTagsProvider from "../../components/MetaTagsProvider.svelte";
+</script>
+
+<svelte:head>
+    <MetaTagsProvider />
+</svelte:head>
+
 <!-- svelte-ignore a11y-missing-content -->
 <section class="container">
     <div class="row my-5">

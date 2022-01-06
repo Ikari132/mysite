@@ -1,7 +1,12 @@
 <script lang="ts">
+    import MetaTagsProvider from "../../../components/MetaTagsProvider.svelte";
     import ProjectPage from "../../../components/ProjectPage.svelte";
     import { versions } from "./versions";
 </script>
+
+<svelte:head>
+    <MetaTagsProvider title="Working time counter" description="Extension for tracking working hours" name="wtc" />
+</svelte:head>
 
 <ProjectPage
     name="Working time counter"

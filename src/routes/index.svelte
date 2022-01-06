@@ -1,4 +1,5 @@
 <script lang="ts">
+    import MetaTagsProvider from "../components/MetaTagsProvider.svelte";
     import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
     import FaTwitterSquare from "svelte-icons/fa/FaTwitterSquare.svelte";
     import FaEnvelopeSquare from "svelte-icons/fa/FaEnvelopeSquare.svelte";
@@ -12,6 +13,10 @@
             users = r.users;
         });
 </script>
+
+<svelte:head>
+    <MetaTagsProvider />
+</svelte:head>
 
 <!-- svelte-ignore a11y-missing-content -->
 <section>
