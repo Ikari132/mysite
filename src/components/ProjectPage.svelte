@@ -20,7 +20,7 @@
 
             <div class="row py-3 links-row">
                 <div>
-                    <h5 class="text-sm-start text-center text-secondary">Available for:</h5>
+                    <h5 class="text-sm-start text-center text-secondary pb-2">Available for:</h5>
                 </div>
                 <div class="col d-flex justify-content-center justify-content-sm-start gap-3">
                     {#each links as link}

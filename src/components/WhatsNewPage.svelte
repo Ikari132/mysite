@@ -6,9 +6,6 @@
     export let name: string;
     export let description: string;
     export let versions: { version: string; date?: string; changes: { title: string; description: string }[] }[];
-
-    console.log($page.url.pathname);
-    console.log($page.url.pathname.substring(0, $page.url.pathname.length - "/whats-new".length));
 </script>
 
 <section>
