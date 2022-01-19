@@ -12,7 +12,7 @@
 </script>
 
 <section>
-    <div class="row my-5 d-flex flex-sm-row flex-column-reverse">
+    <div class="row mt-5 d-flex flex-sm-row flex-column-reverse about-project-wrapper">
         <div class="col-sm-6 col-12 d-flex flex-column justify-content-between about">
             <div>
                 <h1 class="fw-bold text-sm-start text-center">{name}</h1>
@@ -50,7 +50,7 @@
 
     <div>
         {#each features as feature}
-            <div class="row my-5 feature-wrapper gap-4 gap-md-0">
+            <div class="row feature-wrapper gap-4 gap-md-0">
                 <div
                     class="feature-image-wrapper col-12 col-md-6 d-flex justify-content-center justify-content-md-start"
                 >
@@ -101,6 +101,11 @@
         background-repeat: no-repeat;
     }
 
+    .about-project-wrapper,
+    .feature-wrapper {
+        margin-bottom: 6rem;
+    }
+
     .feature-image {
         width: 100%;
         border-radius: 8px;
@@ -110,7 +115,16 @@
         box-shadow: 0 1px 4px 0 #0000003d;
     }
 
+    .feature-description-wrapper {
+        white-space: pre-wrap;
+    }
+
     @media (max-width: 768px) {
+        .about-project-wrapper,
+        .feature-wrapper {
+            margin-bottom: 3rem;
+        }
+
         .feature-image {
             max-width: 340px;
         }
