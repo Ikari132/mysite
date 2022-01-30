@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="utf-8" />
-	<link rel="icon" href="/favicon.png" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Anton Aksionau - Web developer</title>
-	<style>
-		html,
-		body {
-			margin: 0;
-			padding: 0;
-			min-height: 100%;
-		}
-	</style>
-	%svelte.head%
-</head>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Anton Aksionau - Web developer</title>
+		<style>
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				min-height: 100%;
+			}
 
-<body>
-	<div id="svelte">%svelte.body%</div>
-</body>
+		</style>
+		%svelte.head%
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102096121-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+
+			gtag('config', 'UA-102096121-2');
+		</script>
+
+
+	</head>
+
+	<body>
+		<div id="svelte">%svelte.body%</div>
+	</body>
 
 </html>
