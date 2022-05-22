@@ -23,15 +23,13 @@
         <h1 class="fw-bold text-sm-start text-center">Hello! I'm Anton</h1>
         <h5 class="text-sm-start text-center">Web developer</h5>
         <h5 class="text-sm-start text-center">Entrepreneur</h5>
-        <h5 class="text-sm-start text-center">
-          <span class="customers">
-            {#if users}
+        {#if users}
+          <h5 class="text-sm-start text-center">
+            <span class="customers">
               {users}
-            {:else}
-              ---
-            {/if}
-          </span> people already use my products
-        </h5>
+            </span> people already use my products
+          </h5>
+        {/if}
       </div>
 
       <div class="row py-3 contacts-row">
