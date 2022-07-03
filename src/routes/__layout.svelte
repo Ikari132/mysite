@@ -152,6 +152,40 @@
         border-color: #0d6efd;
     } */
 
+    :global(.card) {
+        box-shadow: 0 1px 4px 0 #0000003d;
+        border: none;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 100%;
+        cursor: pointer;
+        transition: box-shadow ease-out 0.2s;
+    }
+
+    :global(.card:hover) {
+        box-shadow: 0 1px 16px 0 #0000003d;
+    }
+
+    :global(.card img) {
+        max-height: 160px;
+        width: 100%;
+        object-fit: contain;
+        background: var(--color-gray-100);
+        padding: 10px;
+    }
+
+    :global(ul) {
+        list-style: none;
+    }
+
+    :global(ul:not(.navbar-nav) li::before) {
+        content: "\2022";
+        color: var(--color-primary-600);
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
     :global(html) {
         height: 100%;
     }

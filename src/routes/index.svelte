@@ -1,17 +1,25 @@
 <script lang="ts">
+  import MetaTagsProvider from "../components/MetaTagsProvider.svelte";
   import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
   import FaTwitterSquare from "svelte-icons/fa/FaTwitterSquare.svelte";
   import FaEnvelopeSquare from "svelte-icons/fa/FaEnvelopeSquare.svelte";
   import CVIcon from "../components/CVIcon.svelte";
-  import { ApiUrl } from "../constants";
+  // import { ApiUrl } from "../constants";
 
   let users = 0;
-  fetch(`${ApiUrl}/stats`)
-    .then((r) => r.json())
-    .then((r) => {
-      users = r.users;
-    });
+  // fetch(`${ApiUrl}/stats`)
+  //   .then((r) => r.json())
+  //   .then((r) => {
+  //     users = r.users;
+  //   })
+  //   .catch((err) => {
+  //     console.error(err);
+  //   });
 </script>
+
+<svelte:head>
+  <MetaTagsProvider />
+</svelte:head>
 
 <!-- svelte-ignore a11y-missing-content -->
 <section>
