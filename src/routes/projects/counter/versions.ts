@@ -1,11 +1,49 @@
 export const versions = [
     {
-        version: "2.2.0",
-        date: "29.12.2021",
+        version: "2.3.0",
+        date: "15.08.2022",
         changes: [
             {
                 title: "",
-                description: "Added month heatmap",
+                description: "Added ability to see previous weeks at week chart",
+            },
+            {
+                title: "",
+                description: "Updated badge colors",
+            },
+        ],
+    },
+    {
+        version: "2.2.3",
+        date: "09.08.2022",
+        changes: [
+            {
+                title: "",
+                description: "Bug fixes",
+            },
+        ],
+    },
+    {
+        version: "2.2.2",
+        date: "08.08.2022",
+        changes: [
+            {
+                title: "",
+                description: "Bug fixes",
+            },
+        ],
+    },
+    {
+        version: "2.2.1",
+        date: "18.01.2022",
+        changes: [
+            {
+                title: "",
+                description: "Updated logo",
+            },
+            {
+                title: "",
+                description: "Heatmap bugfixes",
             },
         ],
     },
