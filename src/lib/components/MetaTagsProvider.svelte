@@ -1,10 +1,10 @@
 <script lang="ts">
-    import { page } from "$app/stores";
+	import { page } from "$app/stores";
 
-    export let title: string = "Anton Aksionau - Web developer";
-    export let description: string = "";
-    export let name: string = "default";
-    const url = "https://www.aksionau.com/";
+	export let title: string = "Anton Aksionau - Web developer";
+	export let description: string = "";
+	export let name: string = "default";
+	const url = "https://www.aksionau.com";
 </script>
 
 <title>{title}</title>
