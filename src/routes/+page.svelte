@@ -5,9 +5,12 @@
 	import FaEnvelopeSquare from "svelte-icons/fa/FaEnvelopeSquare.svelte";
 	import CVIcon from "$lib/components/CVIcon.svelte";
 
-	import twity from "$lib/images/twity.png";
-	import counter from "$lib/images/counter.png";
-	import me from "$lib/images/me.jpg";
+	import me from "$lib/images/me.jpg?width=400&height=400&imgtool";
+	import meWP from "$lib/images/me.jpg?width=400&height=400&webp&imgtool";
+	import twity from "$lib/images/twity.png?width=500&height=500&imgtool";
+	import twityWP from "$lib/images/twity.png?width=500&height=500&webp&imgtool";
+	import counter from "$lib/images/counter.png?width=500&height=500&imgtool";
+	import counterWP from "$lib/images/counter.png?width=500&height=500&webp&imgtool";
 
 	// import { ApiUrl } from "$lib/constants";
 
@@ -73,7 +76,10 @@
 			</div>
 		</div>
 		<div class="col-sm-6 col-12 d-flex justify-content-center justify-content-sm-end">
-			<div class="photo mb-3" style="background-image:url({me});" />
+			<picture class="photo">
+				<source srcset={meWP} type="image/webp" />
+				<img width="200" height="200" src={me} class="photo card-img-top" alt="me" />
+			</picture>
 		</div>
 	</div>
 
@@ -84,7 +90,10 @@
 	<div class="row mt-3 mb-5">
 		<div class="col-sm-6 col-12 mb-3">
 			<div class="card">
-				<img src={twity} class="card-img-top" alt="twity-logo" />
+				<picture>
+					<source srcset={twityWP} type="image/webp" />
+					<img width="470" height="160" src={twity} class="card-img-top" alt="twity-logo" />
+				</picture>
 				<div class="card-body">
 					<h3 class="fw-bold">Twity</h3>
 					<h6>Extension for deleting Tweets</h6>
@@ -94,7 +103,16 @@
 		</div>
 		<div class="col-sm-6 col-12 mb-3">
 			<div class="card">
-				<img src={counter} class="card-img-top counter-image" alt="counter-logo" />
+				<picture>
+					<source srcset={counterWP} type="image/webp" />
+					<img
+						width="470"
+						height="160"
+						src={counter}
+						class="card-img-top counter-image"
+						alt="counter-logo"
+					/>
+				</picture>
 				<div class="card-body">
 					<h3 class="fw-bold">Working time counter</h3>
 					<h6>Extension for tracking working hours</h6>
@@ -117,6 +135,10 @@
 		box-shadow: 0 1px 4px 0 #0000003d;
 		background: #f2f2f2;
 		background-size: 100%;
+
+		-webkit-user-drag: none;
+		pointer-events: none;
+		user-select: none;
 	}
 
 	.contact {
