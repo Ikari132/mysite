@@ -65,7 +65,7 @@
 					</div>
 					<div class="contact">
 						<a
-							href="https://docs.google.com/document/d/1VNF5UTknfN__9SaHCr5qDTtTsm4bI0j9SMEX-txNVEI/edit?usp=sharing"
+							href="https://drive.google.com/file/d/1-DDB8zOEajuRAVeRdIqVFUV93NSvzss4/view?usp=share_link"
 							target="_blank"
 							rel="noreferrer"
 						>
