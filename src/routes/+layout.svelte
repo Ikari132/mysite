@@ -41,7 +41,7 @@
 											href={path.href}
 											class="nav-link"
 											class:active={isActive(path)}
-											target={path.external ? "_blank" : "_self"}
+											target={path.external ? "_blank" : null}
 										>
 											{path.label}
 											{#if path?.external}
