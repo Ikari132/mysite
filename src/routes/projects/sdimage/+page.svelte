@@ -2,9 +2,9 @@
 	import MetaTagsProvider from "$lib/components/MetaTagsProvider.svelte";
 	import ProjectPage from "$lib/components/ProjectPage.svelte";
 
-	import { twity } from "$lib/projects/twity";
+	import { sdImage } from "$lib/projects/sdimage";
 
-	const { name, title, description, links, features, versions, logo } = twity;
+	const { name, title, description, links, features, versions, logo } = sdImage;
 </script>
 
 <svelte:head>

@@ -1,23 +1,13 @@
 <script lang="ts">
-	import MetaTagsProvider from '$lib/components/MetaTagsProvider.svelte';
-	import WhatsNewPage from '$lib/components/WhatsNewPage.svelte';
+	import MetaTagsProvider from "$lib/components/MetaTagsProvider.svelte";
+	import WhatsNewPage from "$lib/components/WhatsNewPage.svelte";
 
-	import counterLogo from '$lib/images/counter-logo.png';
-
-	import { versions } from '$lib/versions/counter';
+	import { wtc } from "$lib/projects/wtc";
+	const { name, title, description, versions, logo } = wtc;
 </script>
 
 <svelte:head>
-	<MetaTagsProvider
-		title="Working time counter"
-		description="Extension for tracking working hours"
-		name="wtc"
-	/>
+	<MetaTagsProvider {title} {description} {name} />
 </svelte:head>
 
-<WhatsNewPage
-	name="Working time counter"
-	description="Extension for tracking working hours"
-	--logo-image="url({counterLogo})"
-	{versions}
-/>
+<WhatsNewPage name={title} {description} --logo-image="url({logo.png})" {versions} />

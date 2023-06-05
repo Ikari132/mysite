@@ -1,12 +1,13 @@
 <script lang="ts">
-	import FaChrome from 'svelte-icons/fa/FaChrome.svelte';
-	import FaFirefox from 'svelte-icons/fa/FaFirefox.svelte';
-	import FaSafari from 'svelte-icons/fa/FaSafari.svelte';
-	import { page } from '$app/stores';
+	import FaChrome from "svelte-icons/fa/FaChrome.svelte";
+	import FaFirefox from "svelte-icons/fa/FaFirefox.svelte";
+	import FaSafari from "svelte-icons/fa/FaSafari.svelte";
+	import FaGlobe from "svelte-icons/fa/FaGlobe.svelte";
+	import { page } from "$app/stores";
 
 	export let name: string;
 	export let description: string;
-	export let links: { href: string; type: 'Chrome' | 'Firefox' | 'Safari' }[];
+	export let links: { href: string; type: "Chrome" | "Firefox" | "Safari" | "Web" }[];
 	export let versions: {
 		version: string;
 		date?: string;
@@ -41,15 +42,18 @@
 								target="_blank"
 								rel="noreferrer"
 							>
-								{#if link.type === 'Chrome'}
+								{#if link.type === "Chrome"}
 									<div class="icon"><FaChrome /></div>
 									Chrome
-								{:else if link.type === 'Firefox'}
+								{:else if link.type === "Firefox"}
 									<div class="icon"><FaFirefox /></div>
 									Firefox
-								{:else if link.type === 'Safari'}
+								{:else if link.type === "Safari"}
 									<div class="icon"><FaSafari /></div>
 									Safari
+								{:else if link.type === "Web"}
+									<div class="icon"><FaGlobe /></div>
+									Web
 								{/if}
 							</a>
 						</div>
