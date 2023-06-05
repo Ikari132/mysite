@@ -33,9 +33,11 @@
 	<div class="row my-5 d-flex flex-sm-row flex-column-reverse">
 		<div class="col-sm-6 col-12 d-flex flex-column justify-content-between about">
 			<div>
-				<h1 class="fw-bold text-sm-start text-center">Hello! I'm Anton</h1>
-				<h5 class="text-sm-start text-center">Web developer</h5>
-				<h5 class="text-sm-start text-center">Entrepreneur</h5>
+				<h1 class="fw-bold text-sm-start mb-3 text-center">Hello! I'm Anton</h1>
+				<h5 class="description text-sm-start text-center">
+					Self-taught web developer with over 7 years of experience in product development and
+					startups
+				</h5>
 				{#if users}
 					<h5 class="text-sm-start text-center">
 						<span class="customers">
@@ -133,6 +135,9 @@
 		-webkit-user-drag: none;
 		pointer-events: none;
 		user-select: none;
+	}
+	.description {
+		line-height: 1.3;
 	}
 
 	.contact {
