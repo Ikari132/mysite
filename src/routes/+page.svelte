@@ -2,6 +2,7 @@
 	import MetaTagsProvider from "$lib/components/MetaTagsProvider.svelte";
 	import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
 	import FaTwitterSquare from "svelte-icons/fa/FaTwitterSquare.svelte";
+	import FaGithubSquare from "svelte-icons/fa/FaGithubSquare.svelte";
 	import FaEnvelopeSquare from "svelte-icons/fa/FaEnvelopeSquare.svelte";
 	import CVIcon from "$lib/components/CVIcon.svelte";
 
@@ -44,7 +45,7 @@
 				{/if}
 			</div>
 
-			<div class="row py-3 contacts-row">
+			<div class="row py-3 pb-0 contacts-row">
 				<div class="col d-flex justify-content-center justify-content-sm-start gap-2">
 					<div class="contact">
 						<a href="https://www.linkedin.com/in/anton-aksionau/" target="_blank" rel="noreferrer">
@@ -54,6 +55,11 @@
 					<div class="contact">
 						<a href="https://twitter.com/AntonAksionau" target="_blank" rel="noreferrer">
 							<FaTwitterSquare />
+						</a>
+					</div>
+					<div class="contact">
+						<a href="https://github.com/Ikari132" target="_blank" rel="noreferrer">
+							<FaGithubSquare />
 						</a>
 					</div>
 					<div class="contact">
