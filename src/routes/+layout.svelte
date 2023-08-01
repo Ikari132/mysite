@@ -1,10 +1,20 @@
 <script lang="ts">
 	import { page } from "$app/stores";
+	import { writable } from "svelte/store";
+
 	import FaExternalLinkAlt from "svelte-icons/fa/FaExternalLinkAlt.svelte";
 	import "bootstrap/dist/css/bootstrap.min.css";
 	import "./styles.css";
 
-	$: paths = [
+	interface IPath {
+		label: string;
+		href: string;
+		root?: boolean;
+		external?: boolean;
+		active?: boolean;
+	}
+
+	const paths = writable<IPath[]>([
 		{
 			label: "Home",
 			href: "/",
@@ -15,12 +25,18 @@
 			href: "/projects",
 			external: false
 		}
-	];
+	]);
 
-	function isActive(path: any) {
-		return path.root
-			? $page.url.pathname === "" || $page.url.pathname === "/"
-			: $page.url.pathname.includes(path.href);
+	$: {
+		const pathname = $page.url.pathname;
+		checkActivePath(pathname);
+	}
+
+	function checkActivePath(pathname: string) {
+		$paths = $paths.map((path) => {
+			path.active = path.root ? pathname === "" || pathname === "/" : pathname.includes(path.href);
+			return path;
+		});
 	}
 </script>
 
@@ -35,12 +51,12 @@
 					<div class="col">
 						<div class="collapse navbar-collapse" id="navbarNav">
 							<ul class="navbar-nav ms-auto">
-								{#each paths as path (path.href)}
+								{#each $paths as path (path.href)}
 									<li class="nav-item">
 										<a
 											href={path.href}
 											class="nav-link"
-											class:active={isActive(path)}
+											class:active={path.active}
 											target={path.external ? "_blank" : null}
 										>
 											{path.label}
