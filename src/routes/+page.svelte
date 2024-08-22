@@ -5,7 +5,8 @@
 	import FaGithubSquare from "svelte-icons/fa/FaGithubSquare.svelte";
 	import FaEnvelopeSquare from "svelte-icons/fa/FaEnvelopeSquare.svelte";
 	import CVIcon from "$lib/components/CVIcon.svelte";
-
+	import XComIcon from "$lib/components/XComIcon.svelte";
+	
 	import me from "$lib/images/me.jpg?width=400&height=400&imgtool";
 	import meWP from "$lib/images/me.jpg?width=400&height=400&webp&imgtool";
 
@@ -56,7 +57,7 @@
 					</div>
 					<div class="contact">
 						<a href="https://twitter.com/AntonAksionau" target="_blank" rel="noreferrer">
-							<FaTwitterSquare />
+							<XComIcon />
 						</a>
 					</div>
 					<div class="contact">
